@@ -53,5 +53,5 @@ class MSpecScript
   # make the specs consistently pass. Until a suitable scheme to handle
   # all these issues, the specs will not be enabled by default.
   #
-  # MSpec.enable_feature :readline
+  MSpec.enable_feature :readline
 end
