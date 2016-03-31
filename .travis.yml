@@ -1,14 +1,12 @@
 sudo: false
 language: ruby
 rvm:
-  - 2.1.8
-  - 2.2.4
-  - 2.3.0
   - ruby-head
 install:
   - git clone https://github.com/ruby/mspec.git ../mspec
 script:
-  - ../mspec/bin/mspec
+  - gem install rdiscount
+  - cat /home/travis/.rvm/gems/ruby-head/extensions/x86_64-linux/2.4.0/rdiscount-2.1.8/mkmf.log
 branches:
   only:
     - master
